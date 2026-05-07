@@ -368,3 +368,58 @@ h3{
 }
 
 /* --- Fim dos Estilos do Portfólio --- */
+
+/* Para o código não quebrar no celular */
+@media (max-width: 768px) {
+    
+    .container-papel {
+        max-width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .menu-container {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: end; 
+    }
+
+    .cabecalho {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .area-principal {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 100%; 
+    }
+
+    .barra-lateral, .sessao-inferior, .habilidades {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    /* Tamanho da fonte tava quebrando muito o site, tive que reduzir */
+    .nome {
+        font-size: 2.5rem;
+    }
+
+    .acoes-home {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .btn-dourado, .btn-vazado {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+/* Fim do ajuste */
