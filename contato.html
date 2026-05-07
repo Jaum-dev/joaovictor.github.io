@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - João Victor</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="container-papel">
+    <div class="grid">
+        <nav class="menu-container">
+            <div id="btn-menu" class="hamburguer">☰</div> 
+            <ul id="menu-lista" class="lista-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portifolio.html">Portfólio</a></li>
+                <li><a href="sobreMim.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+            </ul>
+        </nav>
+
+        <div class="cabecalho">
+            <h1 class="nome">Vamos<span><br>Conversar</span></h1>
+            <p class="txt-medio">Sinta-se à vontade para entrar em contato</p>
+        </div>
+
+        <div class="area-principal">
+            <h3 class="titulo1">Canais de Contato</h3>
+            <p class="txt-grande">Estou aberto a oportunidades de estágio, projetos freelances ou apenas para trocar uma ideia sobre a área de TI.</p>
+            
+            <div class="contato-links">
+                <div class="contato-item">
+                    <h4 class="txt-grande">E-mail</h4>
+                    <p class="txt-medio">Jaum.dev@outlook.com</p>
+                </div>
+
+                <div class="contato-item">
+                    <h4 class="txt-grande">LinkedIn</h4>
+                    <p class="txt-medio"><a href="https://www.linkedin.com/in/joao-victor-sousa-costa" target="_blank" style="color: #959595;">/in/joao-victor-sousa-costa</a></p>
+                </div>
+                <div class="contato-item">
+                    <h4 class="txt-grande">GitHub</h4>
+                    <p class="txt-medio"><a href="https://github.com/Jaum-dev" target="_blank" style="color: #959595;">/Jaum-dev</a></p>
+                </div>
+                
+                <button id="abrir-form" class="btn-dourado" style="margin-top: 20px; cursor: pointer;">Enviar Mensagem Direta</button>
+                <div id="modal-contato" class="modal">
+                    <div class="modal-content">
+                        <span class="fechar-modal">&times;</span>
+                        <h3 style="margin-top: 0;">Mande uma mensagem</h3>
+                        
+                        <form id="form-contato">
+                            <div class="campo">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" placeholder="Seu nome completo">
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" placeholder="usuario@dominio.com">
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" rows="4" placeholder="Como posso ajudar?"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-dourado" style="width: 100%;">Enviar Agora</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="barra-lateral">
+            <div>
+                <h3>Localização</h3>
+                <p class="txt-medio">Fortaleza - CE<br>Brasil</p>
+            </div>
+            <div>
+                <h3>Disponibilidade</h3>
+                <p class="txt-medio">Segunda a Sexta<br>08h às 18h</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
